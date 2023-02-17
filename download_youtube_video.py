@@ -6,7 +6,7 @@ SAVE_PATH = os.getcwd()
 
 
 def downloadVideo(link):
-    yt = YouTube('link')
+    yt = YouTube(link)
     destination = ''
    
     try:
