@@ -20,6 +20,7 @@ def downloadVideo(link):
        
        userChoice = int(input('Enter your choice: '))
        chosenStream = [stream for stream in downloadObj if stream.resolution == res[userChoice-1]][0]
+       print("Downloading...")
        destination = chosenStream.download()  
        print("Download Successfully")
                      
